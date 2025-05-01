@@ -13,7 +13,7 @@ class UsersController extends Controller
     }
 
     public function getProfile(string $username) {
-        $args = ['a', 'b', 1, 2, 3];
+        $args = ['a' => 'args setado', 'b', 1, 2, 3];
         return view('users', compact('username', 'args'));
     }
 
