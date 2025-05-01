@@ -39,4 +39,27 @@
     @empty($args['a'])
         <span class="text-red-500">args não setado </span>
     @endempty
+
+    <table>
+        @for ($i = 0; $i < 10; $i++)
+            <tr>
+                <td>{{ $i }}</td>
+            </tr>
+        @endfor
+    </table>
+
+    @while ($whilezada)
+        {{-- {{dump($whilezada)}} --}}
+
+        @if ($whilezada)
+            {{ $whilezada = false }}
+        @endif
+    @endwhile
+    <table>
+        @foreach ($usernames as $key => $user)
+            <tr>
+                <td>{{$key . '-' . $user }}</td>
+            </tr>
+        @endforeach
+    </table>
 </div>
