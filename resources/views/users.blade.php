@@ -11,7 +11,7 @@
             {{ $arg }}
         @endforeach
 
-        @auth({{$username}})
+        @auth
             <span class="text-blue-500">You are authenticated as {{ $username }}</span>
         @endauth
 
